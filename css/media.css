@@ -1,0 +1,138 @@
+@media (max-width: 960px) {
+  /* Decoration lines */
+  .slider__gallery::before,
+  .slider__gallery::after,
+  .footer__inner::before,
+  .footer__inner::after {
+    display: none;
+  }
+
+  /* Portfolio section */
+  .portfolio__inner {
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+  .work {
+    width: 50%;
+    padding: 10px;
+  }
+
+  .work__img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Footer section */
+  .footer__about,
+  .footer__feedback,
+  .footer__contact {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* Header navigation */
+  .header__inner {
+    flex-wrap: wrap;
+    min-height: auto;
+    padding: 15px 0;
+  }
+
+  .header__nav {
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+  .header__nav li,
+  .header__nav li a {
+    display: block;
+  }
+  .header__nav li a {
+    padding: 8px 0;
+  }
+
+  .header__nav a::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    background-color: #e8603c;
+    color: #000;
+    transition: width 0.3s;
+    margin: 0 auto;
+  }
+
+  .header__nav a:hover::after {
+    width: 100%;
+  }
+  .header__nav a:hover {
+    color: #b9b9b9;
+  }
+
+  .header__nav li + li {
+    margin: 14px 0;
+  }
+
+  .header__menu {
+    display: block;
+    transition: all 0.5s;
+  }
+
+  .header__menu:hover > .header__menu-row {
+    background-color: #bbb;
+  }
+  .header__menu-row {
+    height: 3px;
+    width: 30px;
+    margin: 5px 0;
+    border-radius: 3px;
+    background-color: #000;
+  }
+
+  /* Feature section */
+  .features__inner {
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+  }
+  .feature-head {
+    padding-bottom: 25px;
+  }
+  .features__item:not(:last-child) {
+    margin-bottom: 35px;
+  }
+
+  /* Portfolio section */
+  .portfolio__inner {
+    padding-bottom: 20px;
+  }
+
+  /* Footer section */
+  .footer__inner {
+    flex-wrap: wrap;
+  }
+  .footer__contact {
+    max-width: 100%;
+  }
+  .footer__contact .icon {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 671px) {
+  .footer__about,
+  .footer__feedback {
+    max-width: 100%;
+  }
+  .footer__contact .icon {
+    margin: 0 3px;
+  }
+  .slider__arrows {
+    display: none;
+  }
+  .item__descr {
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    margin-right: 0;
+  }
+}
